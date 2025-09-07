@@ -126,14 +126,15 @@ body {
 
 .cream {
   width: 400px;
+  transform: scale(0.9);
   z-index: 2;
-  margin-top: -50px;
+  margin-top: -64px;
   position: absolute;
 }
 
 .hand {
   width: 800px;
-  margin-top: -50px;
+  margin-top: -60px;
   z-index: 1;
   transform: translateY(100%);
   position: absolute;
@@ -144,8 +145,17 @@ body {
   font-size: 1.3rem;
   color: #333;
   position: relative;
-  max-width: 50%;
+  max-width: 36%;
   text-align: right;
+  font-weight: 700;
+  z-index: 10;
   margin-left: auto;
-  transform: translateY(500%);
+  transform: translateY(300%);
+}
+
+.watermark {
+  font-size: clamp(2rem, 24vw, 30rem);
+  font-weight: 700;
+  color: #eaeaea;
+  transform: translateY(-15vh);
 }
